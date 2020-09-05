@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AppCenterCrashes
+import AppCenterAnalytics
 
 class ViewController: UIViewController {
 
@@ -15,6 +17,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func crashApp(_ sender: UIButton) {
+//        MSCrashes.generateTestCrash()
+        MSAnalytics.trackEvent("calculate_amount")
+    }
+    
 }
 
