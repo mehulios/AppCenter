@@ -17,20 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUT-VR-YOS">
-                                <rect key="frame" x="186.5" y="433" width="41" height="30"/>
-                                <state key="normal" title="Crash"/>
+                                <rect key="frame" x="133.5" y="433" width="147" height="30"/>
+                                <state key="normal" title="Change text to Mehul"/>
                                 <connections>
                                     <action selector="crashApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xt-Ac-TnV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-SV-Kxa">
+                                <rect key="frame" x="186" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="fwd-SV-Kxa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="A1X-Sv-dVf"/>
+                            <constraint firstItem="fwd-SV-Kxa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AA6-xH-eM9"/>
                             <constraint firstItem="JUT-VR-YOS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Njy-IY-AXI"/>
                             <constraint firstItem="JUT-VR-YOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TM4-h8-Yzp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="fwd-SV-Kxa" id="cev-zR-vh2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

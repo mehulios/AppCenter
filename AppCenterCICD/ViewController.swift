@@ -12,6 +12,8 @@ import AppCenterAnalytics
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func crashApp(_ sender: UIButton) {
 //        MSCrashes.generateTestCrash()
+        label.text = "Mehul"
         MSAnalytics.trackEvent("calculate_amount")
     }
     
