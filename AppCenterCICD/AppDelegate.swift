@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Initialize app center SDK
-        MSAppCenter.start("986c3950-2e57-4c4f-9acd-b7059f598acd",
+        MSAppCenter.start("f90e6ad7-d61f-4543-b16d-0d17a59cff45",
                           withServices: [MSAnalytics.self, MSCrashes.self])
         return true
     }
